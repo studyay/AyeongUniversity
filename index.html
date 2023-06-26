@@ -187,8 +187,14 @@
         }
 
         /** 더보기 */
-        function expandCards() {
-            document.getElementById("openCard").style.display = "block";
+        //2301 더보기
+        function expandCards2301() {
+            document.getElementById("openCard2301").style.display = "block";
+        }
+
+        //2401 더보기
+        function expandCards2401() {
+            document.getElementById("openCard2401").style.display = "block";
         }
 
         /** 사이드 바와 메인 바 */
@@ -297,7 +303,7 @@
     <div id="2102" style="display: none; margin-top: 50px;" class="myMargin">
         <button type="button" class="btn btn-dark position-relative" style="margin-bottom: 20px;"> #2021년_2학기
             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                1 <span class="visually-hidden">unread messages</span>
+                3 <span class="visually-hidden">unread messages</span>
             </span>
         </button>
 
@@ -316,6 +322,37 @@
                     </div>
                 </div>
             </div>
+
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100, myText">
+                    <a href="https://blog.naver.com/study-1stclass/223055443488" target="_blank">
+                        <div class="square-image">
+                            <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?data-science"
+                                alt="자료구조 이미지">
+                        </div>
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">데이터과학</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">R언어</h6>
+                        <p class="card-text">R언어를 활용한 데이터과학 입문</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100, myText">
+                    <a href="https://ayeongde.wixsite.com/profile" target="_blank">
+                        <div class="square-image">
+                            <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?math" alt="안드로이드 이미지">
+                        </div>
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">기초수학</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">대학수학</h6>
+                        <p class="card-text">방정식부터 미적분까지</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -331,13 +368,28 @@
                 <div class="card h-100, myText">
                     <a href="https://blog.naver.com/study-1stclass/223055443488" target="_blank">
                         <div class="square-image">
-                            <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?programming">
+                            <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?digital">
                         </div>
                     </a>
                     <div class="card-body">
-                        <h5 class="card-title">컴퓨터프로그래밍</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">C언어</h6>
-                        <p class="card-text">programmers</p>
+                        <h5 class="card-title">디지털논리회로</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">논리연산</h6>
+                        <p class="card-text">논리회로의 개요와 활용</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100, myText">
+                    <a href="https://blog.naver.com/study-1stclass/223055443488" target="_blank">
+                        <div class="square-image">
+                            <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?physics">
+                        </div>
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">기초물리학</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">대학물리학</h6>
+                        <p class="card-text">공학을 위한 기초 물리</p>
                     </div>
                 </div>
             </div>
@@ -451,7 +503,7 @@
 
 
             <!-- 더보기 카드 -->
-            <div id="openCard" style="display: none;">
+            <div id="openCard2301" style="display: none;">
                 <div class="container, myText, row" style="margin-bottom: 30px;">
                     <div class="col-lg-4 mb-4">
                         <div class="card h-100, myText">
@@ -506,7 +558,7 @@
 
             <!-- 클릭하면 펼쳐지는 더보기 버튼 -->
             <div class="col text-center mt-4, myText" style="margin-bottom: 50px;">
-                <button class="btn btn-dark" onclick="expandCards()">Read more</button>
+                <button class="btn btn-dark" onclick="expandCards2301()">Read more</button>
             </div>
         </div>
     </div>
@@ -514,7 +566,7 @@
     <div id="2401" style="display: none; margin-top: 50px;" class="myMargin">
         <button type="button" class="btn btn-dark position-relative" style="margin-bottom: 20px;"> #2024년_1학기
             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                3 <span class="visually-hidden">unread messages</span>
+                3+ <span class="visually-hidden">unread messages</span>
             </span>
         </button>
 
@@ -523,15 +575,71 @@
                 <div class="card h-100, myText">
                     <a href="https://blog.naver.com/study-1stclass/223055443488" target="_blank">
                         <div class="square-image">
-                            <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?programming">
+                            <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?IoT">
                         </div>
                     </a>
                     <div class="card-body">
-                        <h5 class="card-title">컴퓨터프로그래밍</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">C언어</h6>
-                        <p class="card-text">programmers</p>
+                        <h5 class="card-title">사물인터넷</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">IoT</h6>
+                        <p class="card-text">Internet of Things</p>
                     </div>
                 </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100, myText">
+                    <a href="https://blog.naver.com/study-1stclass/223055443488" target="_blank">
+                        <div class="square-image">
+                            <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?security">
+                        </div>
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">암호와 네트워크 보안</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">정보보안</h6>
+                        <p class="card-text">security</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100, myText">
+                    <a href="https://blog.naver.com/study-1stclass/223055443488" target="_blank">
+                        <div class="square-image">
+                            <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?presentation">
+                        </div>
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">프레젠테이션 디자인 테크닉</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">디자인</h6>
+                        <p class="card-text">presentation design techniques</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 더보기 카드 -->
+            <div id="openCard2401" style="display: none;">
+                <div class="container, myText, row" style="margin-bottom: 30px;">
+                    <div class="col-lg-4 mb-4">
+                        <div class="card h-100, myText">
+                            <a href="https://ayeongde.wixsite.com/profile" target="_blank">
+                                <div class="square-image">
+                                    <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?Christian"
+                                        alt="디자인사 8강 이미지">
+                                </div>
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">기독교 세계관의 이해</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">교양 필수</h6>
+                                <p class="card-text">Understanding the Christian Worldview</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 클릭하면 펼쳐지는 더보기 버튼 -->
+            <div class="col text-center mt-4, myText" style="margin-bottom: 50px;">
+                <button class="btn btn-dark" onclick="expandCards2401()">Read more</button>
             </div>
         </div>
     </div>
