@@ -144,12 +144,10 @@
             padding: 10px;
         }
 
-        .b1 {
-            width: 300px;
-            height: 250px;
-            background-color: blue;
-            margin: 100px;
-            box-sizing: border-box;
+        .disabled {
+            filter: grayscale(80%) brightness(80%);
+            /*opacity: 0.8;*/
+            pointer-events: none;
         }
     </style>
 </head>
@@ -227,16 +225,18 @@
         }
 
         /** 더보기 */
+        //2202 더보기
+        function expandCards2202() {
+            document.getElementById("openCard2202").style.display = "block";
+        }
         //2301 더보기
         function expandCards2301() {
             document.getElementById("openCard2301").style.display = "block";
         }
-
         //2302 더보기
         function expandCards2302() {
             document.getElementById("openCard2302").style.display = "block";
         }
-
         //2401 더보기
         function expandCards2401() {
             document.getElementById("openCard2401").style.display = "block";
@@ -384,9 +384,9 @@
         </button>
 
         <div class="container, myText, row">
-            <div class="col-lg-4 mb-4">
+            <div class="col-lg-4 mb-4 disabled">
                 <div class="card h-100, myText">
-                    <a href="https://blog.naver.com/study-1stclass/223055443488" target="_blank">
+                    <a href="https://blog.naver.com/study-1stclass/" target="_blank">
                         <div class="square-image">
                             <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?programming">
                         </div>
@@ -399,12 +399,11 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 mb-4">
+            <div class="col-lg-4 mb-4 disabled">
                 <div class="card h-100, myText">
-                    <a href="https://blog.naver.com/study-1stclass/223055443488" target="_blank">
+                    <a href="https://blog.naver.com/study-1stclass/" target="_blank">
                         <div class="square-image">
-                            <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?data-science"
-                                alt="자료구조 이미지">
+                            <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?data-science">
                         </div>
                     </a>
                     <div class="card-body">
@@ -415,11 +414,11 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 mb-4">
+            <div class="col-lg-4 mb-4 disabled">
                 <div class="card h-100, myText">
-                    <a href="https://ayeongde.wixsite.com/profile" target="_blank">
+                    <a href="https://blog.naver.com/study-1stclass/" target="_blank">
                         <div class="square-image">
-                            <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?math" alt="안드로이드 이미지">
+                            <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?math">
                         </div>
                     </a>
                     <div class="card-body">
@@ -440,9 +439,9 @@
         </button>
 
         <div class="container, myText, row">
-            <div class="col-lg-4 mb-4">
+            <div class="col-lg-4 mb-4 disabled">
                 <div class="card h-100, myText">
-                    <a href="https://blog.naver.com/study-1stclass/223055443488" target="_blank">
+                    <a href="https://blog.naver.com/study-1stclass/" target="_blank">
                         <div class="square-image">
                             <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?digital">
                         </div>
@@ -455,9 +454,9 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 mb-4">
+            <div class="col-lg-4 mb-4 disabled">
                 <div class="card h-100, myText">
-                    <a href="https://blog.naver.com/study-1stclass/223055443488" target="_blank">
+                    <a href="https://blog.naver.com/study-1stclass/" target="_blank">
                         <div class="square-image">
                             <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?physics">
                         </div>
@@ -475,44 +474,144 @@
     <div id="2202" style="display: none; margin-top: 50px;" class="myMargin">
         <button type="button" class="btn btn-dark position-relative" style="margin-bottom: 20px;"> #2022년_2학기
             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                2 <span class="visually-hidden">unread messages</span>
+                7+ <span class="visually-hidden">unread messages</span>
             </span>
         </button>
 
         <div class="container, myText, row">
-            <div class="col-lg-4 mb-4">
+            <div class="col-lg-4 mb-4 disabled">
                 <div class="card h-100, myText">
-                    <a href="https://blog.naver.com/study-1stclass/223055443488" target="_blank">
+                    <a href="https://blog.naver.com/study-1stclass/" target="_blank">
                         <div class="square-image">
-                            <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?digital">
+                            <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?database">
                         </div>
                     </a>
                     <div class="card-body">
-                        <h5 class="card-title">디지털논리회로</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">논리연산</h6>
-                        <p class="card-text">논리회로의 개요와 활용</p>
+                        <h5 class="card-title">데이터베이스</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">database</h6>
+                        <p class="card-text">MS-SQL</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-4 mb-4">
+            <div class="col-lg-4 mb-4 disabled">
                 <div class="card h-100, myText">
-                    <a href="https://blog.naver.com/study-1stclass/223055443488" target="_blank">
+                    <a href="https://blog.naver.com/study-1stclass/" target="_blank">
                         <div class="square-image">
-                            <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?physics">
+                            <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?information&system">
                         </div>
                     </a>
                     <div class="card-body">
-                        <h5 class="card-title">기초물리학</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">대학물리학</h6>
-                        <p class="card-text">공학을 위한 기초 물리</p>
+                        <h5 class="card-title">스마트정보시스템</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">smart information system</h6>
+                        <p class="card-text">4차 혁명과 스마트기술</p>
                     </div>
                 </div>
+            </div>
+
+            <div class="col-lg-4 mb-4 disabled">
+                <div class="card h-100, myText">
+                    <a href="https://blog.naver.com/study-1stclass/" target="_blank">
+                        <div class="square-image">
+                            <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?computer&structure">
+                        </div>
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">컴퓨터구조</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">computer structure</h6>
+                        <p class="card-text">컴퓨터구조의 개요</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 더보기 카드 -->
+            <div id="openCard2202" style="display: none;">
+                <div class="container, myText, row" style="margin-bottom: 30px;">
+                    <div class="col-lg-4 mb-4 disabled">
+                        <div class="card h-100, myText">
+                            <a href="https://blog.naver.com/study-1stclass/" target="_blank">
+                                <div class="square-image">
+                                    <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?new&media">
+                                </div>
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">뉴미디어의 발상과 표현</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">New Media</h6>
+                                <p class="card-text">Ideas and Expressions of New Media</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-4 disabled">
+                        <div class="card h-100, myText">
+                            <a href="https://blog.naver.com/study-1stclass/" target="_blank">
+                                <div class="square-image">
+                                    <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?color&scheme">
+                                </div>
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">색채계획과 배색</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Color scheme</h6>
+                                <p class="card-text">색이란 무엇인가?</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-4 disabled">
+                        <div class="card h-100, myText">
+                            <a href="https://blog.naver.com/study-1stclass/" target="_blank">
+                                <div class="square-image">
+                                    <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?typography">
+                                </div>
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">타이포그래피</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Typography</h6>
+                                <p class="card-text">타이포그래피의 의미</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-4 disabled">
+                        <div class="card h-100, myText">
+                            <a href="https://blog.naver.com/study-1stclass/" target="_blank">
+                                <div class="square-image">
+                                    <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?artificial">
+                                </div>
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">인공지능과 미래</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">artificial</h6>
+                                <p class="card-text">artificial intelligence and the future</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--<div class="col-lg-4 mb-4 disabled">
+                        <div class="card h-100, myText">
+                            <a href="https://blog.naver.com/study-1stclass/" target="_blank">
+                                <div class="square-image">
+                                    <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?environment">
+                                </div>
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">환경과 기후</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">environment</h6>
+                                <p class="card-text">environment and climate</p>
+                            </div>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+
+            <!-- 클릭하면 펼쳐지는 더보기 버튼 -->
+            <div class="col text-center mt-4, myText" style="margin-bottom: 50px;">
+                <button class="btn btn-dark" onclick="expandCards2202()">Read more</button>
             </div>
         </div>
     </div>
 
-    <div id="2301" style="display: none; margin-top: 50px;" class="myMargin">
+    <div id="2301" style="display: block; margin-top: 50px;" class="myMargin">
         <button type="button" class="btn btn-dark position-relative" style="margin-bottom: 20px;"> #2023년_1학기
             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                 9+ <span class="visually-hidden">unread messages</span>
@@ -524,8 +623,7 @@
                 <div class="card h-100, myText">
                     <a href="https://blog.naver.com/study-1stclass/223055443488" target="_blank">
                         <div class="square-image">
-                            <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?data-structure"
-                                alt="자료구조 이미지">
+                            <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?data-structure">
                         </div>
                     </a>
                     <div class="card-body">
@@ -538,41 +636,9 @@
 
             <div class="col-lg-4 mb-4">
                 <div class="card h-100, myText">
-                    <a href="https://ayeongde.wixsite.com/profile" target="_blank">
-                        <div class="square-image">
-                            <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?android"
-                                alt="안드로이드 이미지">
-                        </div>
-                    </a>
-                    <div class="card-body">
-                        <h5 class="card-title">모바일컴퓨팅</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">안드로이드 앱 개발 기획서</h6>
-                        <p class="card-text">안드로이드 앱 개발 기획서 내용</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 mb-4">
-                <div class="card h-100, myText">
-                    <a href="https://ayeongde.wixsite.com/profile" target="_blank">
-                        <div class="square-image">
-                            <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?ai" alt="인공지능 이미지">
-                        </div>
-                    </a>
-                    <div class="card-body">
-                        <h5 class="card-title">인공지능</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">keras와 CNN</h6>
-                        <p class="card-text">keras로 구현하는 CNN(합성곱신경망)</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 mb-4">
-                <div class="card h-100, myText">
                     <a href="https://blog.naver.com/study-1stclass/223068253256" target="_blank">
                         <div class="square-image">
-                            <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?concrete"
-                                alt="철근콘크리트공학 1강 이미지">
+                            <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?concrete">
                         </div>
                     </a>
                     <div class="card-body">
@@ -585,34 +651,60 @@
 
             <div class="col-lg-4 mb-4">
                 <div class="card h-100, myText">
-                    <a href="https://blog.naver.com/study-1stclass/223135222481" target="_blank">
+                    <a href="https://blog.naver.com/study-1stclass/223135201051" target="_blank">
                         <div class="square-image">
-                            <img class="card-img-top"
-                                src="https://postfiles.pstatic.net/MjAyMzA2MjFfNjAg/MDAxNjg3MzQ5MzM1MDEw.tcFxhfnhh6mz0JweX8wsUrfZv3LD0SxOv8snHb54Xm8g.Ag1E0mU1ECaa0vuSaSKafqvD1snJ4hGM-ohORO1wfRMg.PNG.study-1stclass/4.png?type=w773"
-                                alt="응용역학 4강 이미지">
+                            <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?calculate">
                         </div>
                     </a>
                     <div class="card-body">
                         <h5 class="card-title">응용역학</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">단면의 성질(1)</h6>
-                        <p class="card-text">단면 1, 2차 모멘트</p>
+                        <h6 class="card-subtitle mb-2 text-muted">역학일반</h6>
+                        <p class="card-text">응용역학 개요</p>
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-4 mb-4">
                 <div class="card h-100, myText">
-                    <a href="https://blog.naver.com/study-1stclass/223113242142" target="_blank">
+                    <a href="https://blog.naver.com/study-1stclass/223110922328" target="_blank">
                         <div class="square-image">
-                            <img class="card-img-top"
-                                src="https://postfiles.pstatic.net/MjAyMzA1MjhfMTEz/MDAxNjg1Mjc1NzY5OTY1.3yyKYEthJYHh_MvJXKiCJOGOa08pcZsMVuq_3mwul3gg.5p6wtayW7gLOHJPg-iqssbE4NLEslgdCIdt04rKAYqYg.PNG.study-1stclass/11.png?type=w773"
-                                alt="디자인사고와 혁신 11강 이미지">
+                            <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?prototype">
                         </div>
                     </a>
                     <div class="card-body">
                         <h5 class="card-title">디자인사고와 혁신</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Prototype(1)</h6>
-                        <p class="card-text">프로토타이핑이란</p>
+                        <h6 class="card-subtitle mb-2 text-muted">디자인 싱킹</h6>
+                        <p class="card-text">필요성과 방향성</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100, myText">
+                    <a href="https://blog.naver.com/study-1stclass/223121074417" target="_blank">
+                        <div class="square-image">
+                            <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?phone">
+                        </div>
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">컴퓨터와 스마트폰의 활용</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">컴퓨터와 스마트폰</h6>
+                        <p class="card-text">활용 방법과 기능</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100, myText">
+                    <a href="https://blog.naver.com/study-1stclass/223151353567" target="_blank">
+                        <div class="square-image">
+                            <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?graduation">
+                        </div>
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">성적표 공개</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">2023년 1학기</h6>
+                        <p class="card-text">트리플 전공 all A+</p>
                     </div>
                 </div>
             </div>
@@ -621,51 +713,47 @@
             <!-- 더보기 카드 -->
             <div id="openCard2301" style="display: none;">
                 <div class="container, myText, row" style="margin-bottom: 30px;">
-                    <div class="col-lg-4 mb-4">
+                    <div class="col-lg-4 mb-4 disabled">
                         <div class="card h-100, myText">
-                            <a href="https://ayeongde.wixsite.com/profile" target="_blank">
+                            <a href="https://blog.naver.com/study-1stclass/" target="_blank">
                                 <div class="square-image">
-                                    <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?typographic"
-                                        alt="디자인사 8강 이미지">
+                                    <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?android">
+                                </div>
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">모바일컴퓨팅</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">안드로이드 앱 개발 기획서</h6>
+                                <p class="card-text">안드로이드 앱 개발 기획서 내용</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-4 disabled">
+                        <div class="card h-100, myText">
+                            <a href="https://blog.naver.com/study-1stclass/" target="_blank">
+                                <div class="square-image">
+                                    <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?ai">
+                                </div>
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">인공지능</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">keras와 CNN</h6>
+                                <p class="card-text">keras로 구현하는 CNN(합성곱신경망)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-4 disabled">
+                        <div class="card h-100, myText">
+                            <a href="https://blog.naver.com/study-1stclass/" target="_blank">
+                                <div class="square-image">
+                                    <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?typographic">
                                 </div>
                             </a>
                             <div class="card-body">
                                 <h5 class="card-title">디자인사</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">스위스스타일</h6>
                                 <p class="card-text">모던 타이포그래피와 스위스스타일</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 mb-4">
-                        <div class="card h-100, myText">
-                            <a href="https://blog.naver.com/study-1stclass/223121153182" target="_blank">
-                                <div class="square-image">
-                                    <img class="card-img-top"
-                                        src="https://postfiles.pstatic.net/MjAyMzA2MDVfMTAw/MDAxNjg1OTcxMzg3Nzg5.EefECJru8aRMqcqWoW2iULOtH85H_JMOImKuOEyAWvEg.ekfTNH-R4TLtDYBtqdJhk2sYb-Ejujw12XnLnX5gpHIg.PNG.study-1stclass/11.png?type=w773"
-                                        alt="컴활 11강 이미지">
-                                </div>
-                            </a>
-                            <div class="card-body">
-                                <h5 class="card-title">컴퓨터와 스마트폰의 활용</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">1인 크리에이터</h6>
-                                <p class="card-text">미디어와 콘텐츠</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 mb-4">
-                        <div class="card h-100, myText">
-                            <a href="https://ayeongde.wixsite.com/profile" target="_blank">
-                                <div class="square-image">
-                                    <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?graduation"
-                                        alt="A+ 성적 이미지">
-                                </div>
-                            </a>
-                            <div class="card-body">
-                                <h5 class="card-title">성적</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">2023년 1학기</h6>
-                                <p class="card-text">all A+</p>
                             </div>
                         </div>
                     </div>
@@ -682,157 +770,130 @@
     <div id="2302" style="display: none; margin-top: 50px;" class="myMargin">
         <button type="button" class="btn btn-dark position-relative" style="margin-bottom: 20px;"> #2023년_2학기
             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                9+ <span class="visually-hidden">unread messages</span>
+                8+ <span class="visually-hidden">unread messages</span>
             </span>
         </button>
 
         <div class="container, myText, row">
-            <div class="col-lg-4 mb-4">
+            <div class="col-lg-4 mb-4 disabled">
                 <div class="card h-100, myText">
-                    <a href="https://blog.naver.com/study-1stclass/223055443488" target="_blank">
+                    <a href="https://blog.naver.com/study-1stclass/" target="_blank">
                         <div class="square-image">
-                            <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?data-structure"
-                                alt="자료구조 이미지">
+                            <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?bluetooth">
                         </div>
                     </a>
                     <div class="card-body">
-                        <h5 class="card-title">자료구조</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">스택의 개요</h6>
-                        <p class="card-text">후입 선출, push 연산, pop 연산</p>
+                        <h5 class="card-title">무선통신공학</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">communication</h6>
+                        <p class="card-text">wireless communication engineering</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-4 mb-4">
+            <div class="col-lg-4 mb-4 disabled">
                 <div class="card h-100, myText">
-                    <a href="https://ayeongde.wixsite.com/profile" target="_blank">
+                    <a href="https://blog.naver.com/study-1stclass/" target="_blank">
                         <div class="square-image">
-                            <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?android"
-                                alt="안드로이드 이미지">
+                            <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?information">
                         </div>
                     </a>
                     <div class="card-body">
-                        <h5 class="card-title">모바일컴퓨팅</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">안드로이드 앱 개발 기획서</h6>
-                        <p class="card-text">안드로이드 앱 개발 기획서 내용</p>
+                        <h5 class="card-title">통신이론</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">communication theory</h6>
+                        <p class="card-text">통신기술과 이론</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-4 mb-4">
+            <div class="col-lg-4 mb-4 disabled">
                 <div class="card h-100, myText">
-                    <a href="https://ayeongde.wixsite.com/profile" target="_blank">
+                    <a href="https://blog.naver.com/study-1stclass/" target="_blank">
                         <div class="square-image">
-                            <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?ai" alt="인공지능 이미지">
+                            <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?machine&learning">
                         </div>
                     </a>
                     <div class="card-body">
-                        <h5 class="card-title">인공지능</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">keras와 CNN</h6>
-                        <p class="card-text">keras로 구현하는 CNN(합성곱신경망)</p>
+                        <h5 class="card-title">기계학습</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">machine learning</h6>
+                        <p class="card-text">머신러닝</p>
                     </div>
                 </div>
             </div>
-
-            <div class="col-lg-4 mb-4">
-                <div class="card h-100, myText">
-                    <a href="https://blog.naver.com/study-1stclass/223068253256" target="_blank">
-                        <div class="square-image">
-                            <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?concrete"
-                                alt="철근콘크리트공학 1강 이미지">
-                        </div>
-                    </a>
-                    <div class="card-body">
-                        <h5 class="card-title">철근콘크리트공학</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">철근콘크리트 개요</h6>
-                        <p class="card-text">종류 및 성립 이유</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 mb-4">
-                <div class="card h-100, myText">
-                    <a href="https://blog.naver.com/study-1stclass/223135222481" target="_blank">
-                        <div class="square-image">
-                            <img class="card-img-top"
-                                src="https://postfiles.pstatic.net/MjAyMzA2MjFfNjAg/MDAxNjg3MzQ5MzM1MDEw.tcFxhfnhh6mz0JweX8wsUrfZv3LD0SxOv8snHb54Xm8g.Ag1E0mU1ECaa0vuSaSKafqvD1snJ4hGM-ohORO1wfRMg.PNG.study-1stclass/4.png?type=w773"
-                                alt="응용역학 4강 이미지">
-                        </div>
-                    </a>
-                    <div class="card-body">
-                        <h5 class="card-title">응용역학</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">단면의 성질(1)</h6>
-                        <p class="card-text">단면 1, 2차 모멘트</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 mb-4">
-                <div class="card h-100, myText">
-                    <a href="https://blog.naver.com/study-1stclass/223113242142" target="_blank">
-                        <div class="square-image">
-                            <img class="card-img-top"
-                                src="https://postfiles.pstatic.net/MjAyMzA1MjhfMTEz/MDAxNjg1Mjc1NzY5OTY1.3yyKYEthJYHh_MvJXKiCJOGOa08pcZsMVuq_3mwul3gg.5p6wtayW7gLOHJPg-iqssbE4NLEslgdCIdt04rKAYqYg.PNG.study-1stclass/11.png?type=w773"
-                                alt="디자인사고와 혁신 11강 이미지">
-                        </div>
-                    </a>
-                    <div class="card-body">
-                        <h5 class="card-title">디자인사고와 혁신</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Prototype(1)</h6>
-                        <p class="card-text">프로토타이핑이란</p>
-                    </div>
-                </div>
-            </div>
-
 
             <!-- 더보기 카드 -->
             <div id="openCard2302" style="display: none;">
                 <div class="container, myText, row" style="margin-bottom: 30px;">
-                    <div class="col-lg-4 mb-4">
+                    <div class="col-lg-4 mb-4 disabled">
                         <div class="card h-100, myText">
-                            <a href="https://ayeongde.wixsite.com/profile" target="_blank">
+                            <a href="https://blog.naver.com/study-1stclass/" target="_blank">
                                 <div class="square-image">
-                                    <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?typographic"
-                                        alt="디자인사 8강 이미지">
+                                    <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?metaverse">
                                 </div>
                             </a>
                             <div class="card-body">
-                                <h5 class="card-title">디자인사</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">스위스스타일</h6>
-                                <p class="card-text">모던 타이포그래피와 스위스스타일</p>
+                                <h5 class="card-title">메타버스 기술</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">metaverse technology</h6>
+                                <p class="card-text">메타버스의 개요</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 mb-4">
+                    <div class="col-lg-4 mb-4 disabled">
                         <div class="card h-100, myText">
-                            <a href="https://blog.naver.com/study-1stclass/223121153182" target="_blank">
+                            <a href="https://blog.naver.com/study-1stclass/" target="_blank">
                                 <div class="square-image">
-                                    <img class="card-img-top"
-                                        src="https://postfiles.pstatic.net/MjAyMzA2MDVfMTAw/MDAxNjg1OTcxMzg3Nzg5.EefECJru8aRMqcqWoW2iULOtH85H_JMOImKuOEyAWvEg.ekfTNH-R4TLtDYBtqdJhk2sYb-Ejujw12XnLnX5gpHIg.PNG.study-1stclass/11.png?type=w773"
-                                        alt="컴활 11강 이미지">
+                                    <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?multimedia">
                                 </div>
                             </a>
                             <div class="card-body">
-                                <h5 class="card-title">컴퓨터와 스마트폰의 활용</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">1인 크리에이터</h6>
-                                <p class="card-text">미디어와 콘텐츠</p>
+                                <h5 class="card-title">멀티미디어의 이해</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">understanding of multimedia</h6>
+                                <p class="card-text">멀티미디어란 무엇인가?</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 mb-4">
+                    <div class="col-lg-4 mb-4 disabled">
                         <div class="card h-100, myText">
-                            <a href="https://ayeongde.wixsite.com/profile" target="_blank">
+                            <a href="https://blog.naver.com/study-1stclass/" target="_blank">
                                 <div class="square-image">
-                                    <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?graduation"
-                                        alt="A+ 성적 이미지">
+                                    <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?CAD">
                                 </div>
                             </a>
                             <div class="card-body">
-                                <h5 class="card-title">성적</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">2023년 1학기</h6>
-                                <p class="card-text">all A+</p>
+                                <h5 class="card-title">CAD</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Computer-Aided Design</h6>
+                                <p class="card-text">도면 디자인 컴퓨터 기술</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-4 disabled">
+                        <div class="card h-100, myText">
+                            <a href="https://blog.naver.com/study-1stclass/" target="_blank">
+                                <div class="square-image">
+                                    <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?construction">
+                                </div>
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">건설관리론</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">construction</h6>
+                                <p class="card-text">construction management theory</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mb-4 disabled">
+                        <div class="card h-100, myText">
+                            <a href="https://blog.naver.com/study-1stclass/" target="_blank">
+                                <div class="square-image">
+                                    <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?structural">
+                                </div>
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">구조역학</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">structural mechanics</h6>
+                                <p class="card-text">구조역학의 개요</p>
                             </div>
                         </div>
                     </div>
@@ -849,14 +910,14 @@
     <div id="2401" style="display: none; margin-top: 50px;" class="myMargin">
         <button type="button" class="btn btn-dark position-relative" style="margin-bottom: 20px;"> #2024년_1학기
             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                3+ <span class="visually-hidden">unread messages</span>
+                4+ <span class="visually-hidden">unread messages</span>
             </span>
         </button>
 
         <div class="container, myText, row">
-            <div class="col-lg-4 mb-4">
+            <div class="col-lg-4 mb-4 disabled">
                 <div class="card h-100, myText">
-                    <a href="https://blog.naver.com/study-1stclass/223055443488" target="_blank">
+                    <a href="https://blog.naver.com/study-1stclass/" target="_blank">
                         <div class="square-image">
                             <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?IoT">
                         </div>
@@ -869,9 +930,9 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 mb-4">
+            <div class="col-lg-4 mb-4 disabled">
                 <div class="card h-100, myText">
-                    <a href="https://blog.naver.com/study-1stclass/223055443488" target="_blank">
+                    <a href="https://blog.naver.com/study-1stclass/" target="_blank">
                         <div class="square-image">
                             <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?security">
                         </div>
@@ -884,9 +945,9 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 mb-4">
+            <div class="col-lg-4 mb-4 disabled">
                 <div class="card h-100, myText">
-                    <a href="https://blog.naver.com/study-1stclass/223055443488" target="_blank">
+                    <a href="https://blog.naver.com/study-1stclass/" target="_blank">
                         <div class="square-image">
                             <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?presentation">
                         </div>
@@ -902,12 +963,11 @@
             <!-- 더보기 카드 -->
             <div id="openCard2401" style="display: none;">
                 <div class="container, myText, row" style="margin-bottom: 30px;">
-                    <div class="col-lg-4 mb-4">
+                    <div class="col-lg-4 mb-4 disabled">
                         <div class="card h-100, myText">
-                            <a href="https://ayeongde.wixsite.com/profile" target="_blank">
+                            <a href="https://blog.naver.com/study-1stclass/" target="_blank">
                                 <div class="square-image">
-                                    <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?Christian"
-                                        alt="디자인사 8강 이미지">
+                                    <img class="card-img-top" src="https://source.unsplash.com/1600x1600/?Christian">
                                 </div>
                             </a>
                             <div class="card-body">
@@ -927,4 +987,5 @@
         </div>
     </div>
 </body>
+
 </html>
